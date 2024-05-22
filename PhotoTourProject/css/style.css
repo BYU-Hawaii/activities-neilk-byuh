@@ -1,0 +1,21 @@
+ul {
+    text-align: center;
+    list-style-image: url("../images/flower.icon.png");
+    display: inline-block;
+}
+
+li {
+    text-align: left;
+}
+
+body {
+    background-image: url(../images/project1.background.jpg);
+    color: #eff6e0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+a {
+    color: #aec3b0;
+}
