@@ -1,0 +1,99 @@
+/*if there is any text outside the header, section, and footer it will be centered like everything else.*/
+body {
+    text-align: center;
+}
+/*this class combines the h3 and h4 elements*/
+.headers { 
+    color: darkgreen; 
+    text-align: center;
+}
+/*this class combines the header, section, and footer elements*/
+.background {
+    background-color: lavender; 
+    width: auto; 
+    margin: 25px 0; 
+    text-align: center; 
+    border-radius: 15px; 
+    border: 3px solid #ffcad4; 
+    box-shadow: 5px 5px 15px grey; 
+    width: 100%;
+}
+/*secretly making the color of the title a slight shade of green lighter*/
+#secretgecko {
+    color: green; 
+    text-align: center;
+}
+/*add inset borders around the main text elements*/
+p {
+    color: darkgreen; 
+    text-align: center; 
+    border-style: inset; 
+    border-color: #ffcad4; 
+    border-radius: 5px;
+}
+h1 {
+    border-style: inset; 
+    border-color: #ffcad4;
+}
+h3 {
+    border-style: inset; 
+    border-color: #ffcad4;
+}
+/*custom font from google*/
+.googlefont {
+    font-family: "Poetsen One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+hr {
+    height: 2px;
+    background-color: #ffcad4;
+    padding: 5px;
+}
+
+li {
+    display: inline;
+}
+
+a {
+    text-decoration: none;
+    padding: 10px 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    color: green
+}
+
+a:hover {
+    background-color: #ffcad4;
+    
+}
+
+nav {
+    display: inline;
+}
+
+.padme li {
+    padding: 10px 10px;
+}
+
+button {
+    padding: 5px 5px;
+    border: solid; border-color: #ffcad4;
+    font-weight: bold;
+    font-family:Arial, Helvetica, sans-serif;
+    color: green;
+}
+
+button:hover {
+    color: purple;
+}
+
+
+
+
