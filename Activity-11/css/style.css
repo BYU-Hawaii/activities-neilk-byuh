@@ -1,0 +1,53 @@
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    padding: 15px;
+}
+
+.grid-item {
+    background-color: brown;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    border: 10px solid white;
+    padding: 5px;
+    font-family:'Courier New', Courier, monospace;
+}
+
+.item1 {
+    grid-column: 1/2;
+}
+
+.item2 {
+    grid-column: 2/3;
+}
+
+.item3 {
+    grid-column: 3/4;
+}
+
+.item4 {
+    grid-column: 4/5;
+}
+
+body {
+    background-color: tan;
+}
+
+h6 {
+    text-align: center;
+    color: white;
+}
+
+body {
+    background-image: url(../images/groot.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+}
+
+footer {
+    margin-top: 75%;
+}
