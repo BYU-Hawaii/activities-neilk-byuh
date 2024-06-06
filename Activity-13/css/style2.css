@@ -1,0 +1,74 @@
+/* Main grid container layout */
+.grid-container {
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "item1 item2 item3 item4";
+    padding: 15px;
+    margin: 0 25%;
+}
+
+/* Grid item styles */
+.grid-item {
+    background-color: brown;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+    font-size: 25px;
+    border: 10px solid white; /* Updated border color to white */
+    padding: 5px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Text container styles */
+#text-container {
+    background-color: rgba(165, 42, 42, 0.8);
+    padding: 5px;
+    margin: 12px;
+    border: 10px solid white; /* Updated border color to white */
+    border-width: 15px;
+    margin: 0 25%;
+}
+
+/* Paragraph and title styles */
+.paragraph, .title {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    border: 1px solid white; /* Updated border color to white */
+}
+
+/* Body and background setup */
+body {
+    background-color: tan;
+    background-image: url(../images/groot.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% 25%;
+    margin: 0;
+}
+
+/* Footer and its styling */
+footer {
+    text-align: center;
+    color: white;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Responsive grid layout adjustments */
+@media (min-width: 768px) {
+    .grid-container {
+        grid-template-areas: 
+            "item1 item2 item3 item4";
+    }
+}
+
+@media (min-width: 1024px) {
+    .grid-container {
+        grid-template-areas: 
+            "item1 item2 item3 item4";
+    }
+}
