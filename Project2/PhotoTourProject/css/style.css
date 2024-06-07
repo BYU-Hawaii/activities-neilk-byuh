@@ -1,0 +1,22 @@
+/*Creating custom bullet image and aligning the ul*/
+ul {
+    text-align: center;
+    list-style-image: url("../images/flower.icon.png");
+    display: inline-block;
+}
+/*aligns the list items to the bullets*/
+li {
+    text-align: left;
+}
+/*adding background, making changes to how the text looks across all pages*/
+body {
+    background-image: url(../images/project1.background.jpg);
+    color: #eff6e0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    font-weight: bold;
+}
+/*makes the links darker then the rest of the text*/
+a {
+    color: #aec3b0;
+}
