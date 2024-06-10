@@ -19,6 +19,10 @@ title {
     text-align: center;
 }
 
+#homepage-nav {
+    margin-top: 50px;
+}
+
 .nav-bar {
     padding: 10px;
     display: block;
