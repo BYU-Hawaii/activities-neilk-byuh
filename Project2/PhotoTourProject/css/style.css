@@ -1,22 +1,137 @@
-/*Creating custom bullet image and aligning the ul*/
-ul {
-    text-align: center;
-    list-style-image: url("../images/flower.icon.png");
-    display: inline-block;
-}
-/*aligns the list items to the bullets*/
-li {
-    text-align: left;
-}
 /*adding background, making changes to how the text looks across all pages*/
 body {
     background-image: url(../images/project1.background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     color: #eff6e0;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-weight: bold;
+    font-size: smaller;
+    
 }
+
+main {
+    margin-top: 50px;
+}
+
+title {
+    text-align: center;
+}
+
+.nav-bar {
+    padding: 10px;
+    display: block;
+}
+
+.nav-bar a {
+    display: block;
+    justify-content: center; /* Center the links */
+    padding: 5px;
+    border: 5px solid white;
+}
+
+.nav-bar a:hover {
+    background-color: pink;
+}
+
+.list-container { /* Assuming ul is inside a container element */
+    text-align: center; /* Centers child elements horizontally */
+}
+/*Creating custom bullet image and aligning the ul*/
+ul {
+    list-style-image: url("../images/flower.icon.png");
+    padding: 0; /* Removes default padding */
+    margin: 0; /* Removes default margin */
+    list-style-position: outside; /* Ensures bullets are outside the list items */
+    text-align: left; /* Aligns the text inside the list items to the left */
+    display: inline-block; /* Allows centering the list */
+}
+/*aligns the list items to the bullets*/
+li {
+    padding-left: 20px; /* Adjust this value based on the size of the custom bullet */
+    text-align: left; /* Ensures text inside list items is aligned to the left */
+}
+
 /*makes the links darker then the rest of the text*/
 a {
     color: #aec3b0;
+    text-decoration: none;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    border: 10px solid white;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    width: 100%;
+    justify-items: center;
+}
+
+.gallery img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (min-width: 768px) {
+    body{
+        font-size: medium;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .nav-bar {
+        display: inline;
+    }
+
+    .nav-bar a {
+        display: inline;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .gallary img {
+        max-width: 50%;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+    body {
+        font-size: larger;
+    }
+
+    .nav-bar {
+        margin-top: 50px;
+    }
+
+    .nav-bar a {
+        margin: 25px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .gallary img {
+        max-width: 33.333%;
+    }
+
+    #index-footer {
+        margin-top: 50px;
+    }
+
 }

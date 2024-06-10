@@ -4,42 +4,46 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
-    <title>Photo Showcase</title>
+    <title>Project 2</title>
 </head>
 <body>
-    <header>
-        <h1>Welcome To Hawaii</h1>
-        <p>Aloha, and welecome to my webpage! My name is Neil Knight. I am a student at Brigham-Young University Hawaii,
-            and I am currently learning how to code webpages. I am excited to test my new web page coding skills by giving
-            a photo tour of where I was born and raised. Hawaii is the most beautiful place in the world in my opinion and 
-            there is beautiful wildlife, stunning sunsets, and pristine beaches. Hawaii is probably the best place to live
-            on earth. 
-        </p>
-        <h2>Places around Oahu</h2>
-        <ul>
-            <li>Waikiki</li>
-            <li>Haunama Bay</li>
-            <li>Chinaman's Hat</li>
-        </ul>
-        <nav>
-            <a href="../PhotoTourProject/chinamanshat.html">Visit Chinaman's Hat</a>
-            <br>
-            <a href="../PhotoTourProject/pearlharbor.html">Vist Pearl Harbor</a>
-            <br>
-            <a href="../PhotoTourProject/waikiki.html">Visit Waikiki</a>
-            <br>
-            <a href="../PhotoTourProject/food.html">Food Here</a>
-        </nav>
-    </header>
-    <section>
-        <h3>Feel free to navigate through the pages!</h3>
-    </section>
-    <footer>
-        <h4>Royalty Free Photos Provided by
-            <a href="www.pixabay.com">
-                <strong>Pixabay.com</strong>
-            </a>
-        </h4>
-    </footer>
+    <div class="grid-container">
+        <header class="header">
+            <h1 class="title">Welcome To Hawaii</h1>
+            <p class="text">Aloha, and welecome to my webpage! My name is Neil Knight. I am a student at Brigham-Young University Hawaii,
+                and I am currently learning how to code webpages. I am excited to test my new web page coding skills by giving
+                a photo tour of where I was born and raised. Hawaii is the most beautiful place in the world in my opinion and 
+                there is beautiful wildlife, stunning sunsets, and pristine beaches. Hawaii is probably the best place to live
+                on earth. 
+            </p>
+            <h2 class="title">Places around Oahu</h2>
+            <ul class="list-container">
+                <li>Waikiki</li>
+                <li>Haunama Bay</li>
+                <li>Chinaman's Hat</li>
+            </ul>
+            <nav class="nav-bar">
+                <a href="../PhotoTourProject/chinamanshat.html">Visit Chinaman's Hat</a>
+                <a href="../PhotoTourProject/pearlharbor.html">Vist Pearl Harbor</a>
+                <a href="../PhotoTourProject/waikiki.html">Visit Waikiki</a>
+                <a href="../PhotoTourProject/food.html">Food Here</a>
+            </nav>
+        </header>
+        <main class="main">
+            <div class="gallery">    
+                <img src="./images/molokaii-2391242_1280.jpg" alt="molokaii">
+                <img src="./images/cocktail-2282032_1280.jpg" alt="a cocktail at the beach">
+                <img src="./images/hawaii-2445609_1280.jpg" alt="a sea turtle">
+            </div>
+        </main>
+        <footer class="footer" id="index-footer">
+            <h3 class="title">Feel free to navigate through the pages!</h3>
+            <h4 class="title">Royalty Free Photos Provided by
+                <a href="www.pixabay.com">
+                    <strong>Pixabay.com</strong>
+                </a>
+            </h4>
+        </footer>
+    </div>    
 </body>
 </html>
