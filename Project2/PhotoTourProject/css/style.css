@@ -19,8 +19,7 @@ title {
     text-align: center;
 }
 
-/*since the homepage is a little different*/
-#homepage-nav {
+.section {
     margin-top: 3%;
 }
 
