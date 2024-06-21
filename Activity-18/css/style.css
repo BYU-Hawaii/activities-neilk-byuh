@@ -1,3 +1,8 @@
+input {
+  display: inline-block;
+  width: 100%;
+}
+
 .feedback {
   color: red;
   display: none;
@@ -8,3 +13,10 @@
   display: none; 
 }
 
+@media (min-width: 1024px) {
+  input{
+    display: inline;
+    width: auto;
+  }
+  
+}
