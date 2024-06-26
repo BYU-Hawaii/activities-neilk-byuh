@@ -1,3 +1,7 @@
-document.getElementById('changeColorButton').addEventListener('click', function() {
-    document.body.style.backgroundColor = '#' + Math.floor(Math.random()*16777215).toString(16);
+document.getElementById('feedbackForm').addEventListener('submit', function(event) {
+    // Prevent the default form submission behavior
+    event.preventDefault();
+
+    var feedbackMessage = document.getElementById('feedbackMessage');
+            feedbackMessage.style.display = 'block';
 });
