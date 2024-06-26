@@ -91,6 +91,43 @@ main {
     font-size: small;
 }
 
+/*turtle game*/
+.game-container {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    margin: 0 auto;
+    border: 2px solid #000;
+    overflow: hidden;
+}
+.turtle {
+    position: absolute;
+    left: 50px;
+    bottom: 50%;
+    width: 60px;
+    height: 40px;
+    background-image: url('./images/turtle.png');
+    background-size: cover;
+    transition: transform 0.2s ease-out;
+}
+.obstacle {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    height: 200px;
+    background-color: green;
+    animation: obstacleMove 3s linear infinite;
+}
+@keyframes obstacleMove {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+/*end of turtle game*/
+
 .text-container {
     background-color: white;
     color:#74C69D;

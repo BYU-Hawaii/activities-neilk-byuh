@@ -1,7 +1,15 @@
 document.getElementById('feedbackForm').addEventListener('submit', function(event) {
-    // Prevent the default form submission behavior
-    event.preventDefault();
-
-    var feedbackMessage = document.getElementById('feedbackMessage');
-            feedbackMessage.style.display = 'block';
+//prevents going to top
+event.preventDefault();
+//feedback submitted
+var feedbackMessage = document.getElementById('feedbackMessage');
+        feedbackMessage.style.display = 'block';
+//turtle game 
+function resetGame() {
+    document.getElementById('gameMessage').innerText = '';
+    var turtle = document.querySelector('.turtle');
+    turtle.style.animation = 'none';
+    turtle.offsetHeight; 
+    turtle.style.animation = null;
+}
 });
